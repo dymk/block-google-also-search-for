@@ -1,7 +1,8 @@
 // ==UserScript==
-// @name         Google - Block "People also search for" & "People also ask
-// @namespace    https://github.com/dymk
-// @version      1.1
+// @name         Google - Block "People also search for" & "People also ask"
+// @namespace    https://github.com/dymk/block-google-also-search-for
+// @license      gpl-3.0
+// @version      1.2
 // @description  Block the "...also search for..." and "...also ask" boxes in Google search results. Does not rely on hardcoded class names, so it's more future proof.
 // @author       dymk
 // @match        https://www.google.com/search*
@@ -14,12 +15,16 @@
 
 (function () {
     'use strict';
+    const DEBUG = false;
 
     function removeElements() {
         let removed = 0;
         removed += removeXpath("//*[text() = 'People also search for']/../../../../../node()");
         removed += removeXpath("//*[text() = 'People also ask']/../../../../../node()");
-        console.log(`Removed ${removed} "...also..." elems`);
+
+        if (DEBUG) {
+            console.log(`Removed ${removed} "...also..." elems`);
+        }
     }
 
     function removeXpath(path) {

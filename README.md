@@ -17,3 +17,9 @@ The elements are queried using XPath, rather than using CSS class selectors. Man
 Using an XPath query should prove more resilient, as it looks at the text of HTML attributes (which doesn't change, at least as often).
 
 Google may decide to change the underlying structure of the HTML on the Search Results page, which may break this plugin in the future, but it should be a matter of "just" recomputing how many `div` elements to select upwards.
+
+## Contributing
+
+1. Fork the repository
+2. Open a pull request
+3. I'll merge it if it looks good
