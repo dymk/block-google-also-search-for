@@ -1,12 +1,14 @@
 // ==UserScript==
 // @name         Google - Block "People also search for" & "People also ask
 // @namespace    https://github.com/dymk
-// @version      1.0
+// @version      1.1
 // @description  Block the "...also search for..." and "...also ask" boxes in Google search results. Does not rely on hardcoded class names, so it's more future proof.
 // @author       dymk
 // @match        https://www.google.com/search*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=google.com
 // @run-at       document-start
+// @updateURL    https://github.com/dymk/block-google-also-search-for/raw/master/block-also-search-for.user.js
+// @downloadURL  https://github.com/dymk/block-google-also-search-for/raw/master/block-also-search-for.user.js
 // @grant        none
 // ==/UserScript==
 
